@@ -1,9 +1,9 @@
 import random
 
-def jogar():
-    print("==========================")
-    print("Bem vindo ao Jogo da FORCA")
-    print("==========================")
+def play():
+    print("===================================")
+    print("BEM-VINDO AO JOGO DA FORCA DE NOMES")
+    print("===================================\n")
 
     file = open('file.txt', 'r')
 
@@ -23,7 +23,7 @@ def jogar():
     tracos = [ '_' for letra in palavra_secreta]
 
     while not enforcou and not acertou:
-        chute = input("Qual letra você escolhe?")
+        chute = input("Qual letra você escolhe? ")
         chute = chute.strip().upper()
 
         if chute in palavra_secreta:
@@ -40,9 +40,9 @@ def jogar():
         print(tracos)
 
     if acertou:
-        print('VOCÊ GANHOU!!!')
+        print('VOCÊ GANHOU!!!\n')
     else:
-        print('VOCÊ PERDEU!!!')
+        print('VOCÊ PERDEU!!!\n')
 
     print('FIM DO JOGO!!!')
 
