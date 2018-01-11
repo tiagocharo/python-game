@@ -18,7 +18,6 @@ def play():
 
     print('Você tem {} tentativas\n'.format(total_try))
     secret_number = round(random.random() * 100)
-    print('ESSE É O NUMERO SECRETO {}'.format(secret_number))
 
     while total_try > 0:
         try_number = int(input('Escolha um número entre 1 e 100: '))
